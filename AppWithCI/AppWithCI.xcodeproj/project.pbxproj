@@ -16,6 +16,7 @@
 		EB3C33CD25C905910091AC9A /* AppWithCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C33CC25C905910091AC9A /* AppWithCITests.swift */; };
 		EB3C33D825C905910091AC9A /* AppWithCIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C33D725C905910091AC9A /* AppWithCIUITests.swift */; };
 		EB3C33FC25C907530091AC9A /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = EB3C33FB25C907530091AC9A /* MyLibrary */; };
+		EB3C340225C9121D0091AC9A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EB3C340125C9121D0091AC9A /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB3C33FC25C907530091AC9A /* MyLibrary in Frameworks */,
+				EB3C340225C9121D0091AC9A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +160,7 @@
 			name = AppWithCI;
 			packageProductDependencies = (
 				EB3C33FB25C907530091AC9A /* MyLibrary */,
+				EB3C340125C9121D0091AC9A /* Alamofire */,
 			);
 			productName = AppWithCI;
 			productReference = EB3C33B225C9058E0091AC9A /* AppWithCI.app */;
@@ -230,6 +233,9 @@
 				Base,
 			);
 			mainGroup = EB3C33A925C9058E0091AC9A;
+			packageReferences = (
+				EB3C340025C9121D0091AC9A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = EB3C33B325C9058E0091AC9A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -609,10 +615,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		EB3C340025C9121D0091AC9A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		EB3C33FB25C907530091AC9A /* MyLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MyLibrary;
+		};
+		EB3C340125C9121D0091AC9A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB3C340025C9121D0091AC9A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
