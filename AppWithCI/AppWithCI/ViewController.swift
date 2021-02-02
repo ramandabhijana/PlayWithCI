@@ -8,6 +8,7 @@
 import UIKit
 import MyLibrary
 import Alamofire
+import OurLibrary
 
 class ViewController: UIViewController {
   
@@ -18,12 +19,11 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     title = "Travis CI"
-    AF.request("www.google.com").validate().response { response in
-      print("\(String(describing: response.data))")
-    }
+//    AF.request("www.google.com").validate().response { response in
+//      print("\(String(describing: response.data))")
+//    }
     
-    let number = Int(MyLibrary.text!)
-    myLabel.text = "\(String(describing: number))"
+    myLabel.text = OurLibrary.text
   }
 
 

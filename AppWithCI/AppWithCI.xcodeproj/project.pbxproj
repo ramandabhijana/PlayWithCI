@@ -17,6 +17,7 @@
 		EB3C33D825C905910091AC9A /* AppWithCIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C33D725C905910091AC9A /* AppWithCIUITests.swift */; };
 		EB3C33FC25C907530091AC9A /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = EB3C33FB25C907530091AC9A /* MyLibrary */; };
 		EB3C340225C9121D0091AC9A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EB3C340125C9121D0091AC9A /* Alamofire */; };
+		EB3C340B25C917EB0091AC9A /* OurLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = EB3C340A25C917EB0091AC9A /* OurLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		EB3C33D725C905910091AC9A /* AppWithCIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWithCIUITests.swift; sourceTree = "<group>"; };
 		EB3C33D925C905910091AC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB3C33E825C906E20091AC9A /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLibrary; path = ../Modules/MyLibrary; sourceTree = "<group>"; };
+		EB3C340625C917AF0091AC9A /* OurLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = OurLibrary; path = ../Modules/OurLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			files = (
 				EB3C33FC25C907530091AC9A /* MyLibrary in Frameworks */,
 				EB3C340225C9121D0091AC9A /* Alamofire in Frameworks */,
+				EB3C340B25C917EB0091AC9A /* OurLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +87,7 @@
 		EB3C33A925C9058E0091AC9A = {
 			isa = PBXGroup;
 			children = (
+				EB3C340625C917AF0091AC9A /* OurLibrary */,
 				EB3C33E825C906E20091AC9A /* MyLibrary */,
 				EB3C33B425C9058E0091AC9A /* AppWithCI */,
 				EB3C33CB25C905910091AC9A /* AppWithCITests */,
@@ -161,6 +165,7 @@
 			packageProductDependencies = (
 				EB3C33FB25C907530091AC9A /* MyLibrary */,
 				EB3C340125C9121D0091AC9A /* Alamofire */,
+				EB3C340A25C917EB0091AC9A /* OurLibrary */,
 			);
 			productName = AppWithCI;
 			productReference = EB3C33B225C9058E0091AC9A /* AppWithCI.app */;
@@ -635,6 +640,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EB3C340025C9121D0091AC9A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		EB3C340A25C917EB0091AC9A /* OurLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OurLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
